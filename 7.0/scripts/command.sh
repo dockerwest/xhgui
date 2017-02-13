@@ -2,7 +2,7 @@
 
 /prepare.sh
 
-gosu www-data rsync -a --info=progress2 /var/lib/xhgui/ /var/www/app/
+gosu www-data rsync -a --info=progress2 /var/lib/xhgui/ /phpapp/
 
 if [ "php-fpm7.0" != "$1" ] && [ "/bin/bash" != "$1" ]; then
     exec gosu www-data "$@"

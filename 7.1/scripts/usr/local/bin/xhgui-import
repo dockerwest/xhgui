@@ -2,13 +2,13 @@
 
 xhgui_import_item() {
     echo "importing $1"
-    php /var/www/app/external/import.php -f /var/www/xhprof/$1
+    php /phpapp/external/import.php -f /xhprof/$1
     echo "removing $1"
-    rm /var/www/xhprof/$1
+    rm /xhprof/$1
 }
 
 xhgui_import() {
-    files=$(ls -1tr /var/www/xhprof/*.xhprof)
+    files=$(ls -1tr /xhprof/*.xhprof)
     count=$(echo $files | wc -l)
     if [ $count -gt 0 ]; then
         for file in $files; do
