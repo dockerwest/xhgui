@@ -1,4 +1,4 @@
 #!/bin/sh
-docker pull blackikeeagle/php-debian:5.6
+docker pull dockerwest/php:5.6
 
-docker build --no-cache -t blackikeeagle/php-xhgui:5.6 .
+docker build --no-cache -t dockerwest/php-xhgui:5.6 .
