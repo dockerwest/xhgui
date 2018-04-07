@@ -4,7 +4,9 @@ set -e
 
 # install packages
 apt-get update
-apt-get install -y php5.6-xml php5.6-mcrypt php-mongodb rsync git
+apt-get install -y rsync git
+
+extensions -i xml mcrypt mongodb
 
 mkdir -p /var/lib/xhgui
 chown www-data: /var/lib/xhgui
