@@ -19,3 +19,5 @@ apt-get purge -y --auto-remove git
 
 apt-get clean -y
 
+# update permissions to allow rootless operation
+/usr/local/bin/permissions
