@@ -6,7 +6,7 @@ set -e
 apt-get update
 apt-get install -y rsync git
 
-extensions -i xml mcrypt mongodb
+extensions -i xml mongodb
 
 mkdir -p /var/lib/xhgui
 chown www-data: /var/lib/xhgui
